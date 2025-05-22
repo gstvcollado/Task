@@ -6,6 +6,7 @@ import Inicio from "../pages/Inicio";
 import Tareas from "../pages/Tareas";
 import Proyectos from "../pages/Proyectos";
 import Configuracion from "../pages/Configuracion";
+import DownloadReport from "../pages/DownloadReport";
 
 // Componente principal que gestiona las rutas de la aplicación
 const Main = () => {
@@ -17,10 +18,11 @@ const Main = () => {
         {/* Define cada ruta y el componente que debe renderizarse */}
         <Route path="/" element={<Inicio />} /> {/* Ruta de inicio */}
         <Route path="/tareas" element={<Tareas />} /> {/* Página de tareas */}
-        <Route path="/proyectos" element={<Proyectos />} />{" "}
+        <Route path="/proyectos" element={<Proyectos />} />
         {/* Página de proyectos */}
-        <Route path="/configuracion" element={<Configuracion />} />{" "}
+        <Route path="/configuracion" element={<Configuracion />} />
         {/* Página de configuración */}
+        <Route path="/report/pdf" element={<DownloadReport />} />
       </Routes>
     </main>
   );

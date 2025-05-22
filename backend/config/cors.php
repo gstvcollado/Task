@@ -6,7 +6,7 @@ return [
 
     'allowed_methods' => ['*'], // Permitir todos los métodos HTTP
 
-    'allowed_origins' => ['http://localhost:5173/'], // Origen de tu aplicación React (ajústalo si es necesario)
+    'allowed_origins' => ['http://localhost:5173'], // Origen de tu aplicación React (ajústalo si es necesario)
 
     'allowed_origins_patterns' => [], // Opcional: puedes dejarlo vacío
 

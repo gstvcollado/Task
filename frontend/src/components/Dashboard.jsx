@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import {
   BarChart,
@@ -38,6 +39,18 @@ const Dashboard = () => {
 
   return (
     <div className="bg-gray-100 rounded p-4 shadow-md max-w-7xl mx-auto">
+      <div className="flex justify-between items-center mb-4">
+        <h2 className="text-lg font-semibold text-gray-700">
+          Panel de Control
+        </h2>
+        <Link
+          to="/report/pdf"
+          className="bg-red-500 hover:bg-red-600 text-white text-sm px-4 py-2 rounded shadow"
+        >
+          Descargar Reporte PDF
+        </Link>
+      </div>
+
       {/* Sección de Lista de tareas */}
       <div className="mb-4">
         <h2 className="text-lg font-semibold text-gray-700 mb-2">
